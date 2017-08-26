@@ -3,7 +3,9 @@
       {% for media in site.social-media %}
 
          <a aria-label="{{ media[0] | capitalize }}"
-            href="{{ media[1]  }}" >
+            href="{{ media[1] }}"
+            title="{{ media[0] | capitalize }}" 
+            >
             {% if media[0] == 'email' %}
               <i class="icon fa fa-envelope"></i>
             {% else %}
