@@ -41,7 +41,7 @@ about [jekyll here.](http://jekyllrb.com/)
 - [bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
 
-### WSEALUG Resoutces
+### WSEALUG Resources
 - [github](https://github.com/wsealug)
 - [meetup](https://www.meetup.com/)
 - [twitter](https://twitter.com/WSeaLUG)

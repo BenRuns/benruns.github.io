@@ -1,5 +1,5 @@
 
-<div class="col-2 col-md-0 console">
+<div class="col-3 col-md-0 console">
     <ul class='list-group'>
      {% for link in site.nav %}
 
@@ -9,14 +9,5 @@
 
      {% endfor %}
    </ul>
-
-   <ul class='list-group'>
-    {% for media in site.social-media %}
-
-       <a href="{{ media[1]  }}" class="list-group-item list-group-item-action">
-         {{ media[0] | capitalize}}
-       </a>
-
-    {% endfor %}
-   </ul>
+   <!-- take an input and put different data depending if main or blog? -->
 </div>
