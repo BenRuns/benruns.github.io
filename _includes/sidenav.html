@@ -19,7 +19,7 @@
      <li>Presentations</li>
      {% for link in site.data.presentations reversed %}
 
-        <a href="{{ site_prefix | append: '/presentations#' }} {{ link.title | replace: ' ', ''| downcase   }}" class="list-group-item list-group-item-action">
+        <a href="{{ site_prefix | append: '/presentations#' }}{{ link.title | replace: ' ', ''| downcase   }}" class="list-group-item list-group-item-action">
           {{ link.title  }}
         </a>
 
