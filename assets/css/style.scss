@@ -2,7 +2,7 @@
 ---
 
 //colors
-$background: #f3f3f3;
+$background: #5E2750;
 $console-background:#2C001E;
 $console-text: #CCCCCC;
 $console-link: #ffff00;
@@ -75,10 +75,16 @@ body {
  }
  .readable{
    color:black;
+   a {
+     color: $darkgreen
+   }
+   img {
+     max-width: 100%;
+   }
  }
- .readable a{
-   color: $darkgreen;
- }
+.announcement-title a{
+  color: black
+}
 
  // Extra small devices (portrait phones, less than 576px)
  // No media query since this is the default in Bootstrap
