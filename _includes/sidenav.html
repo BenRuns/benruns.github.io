@@ -8,6 +8,22 @@
         </a>
 
      {% endfor %}
+     <li>Recent Updates</li>
+     {% for link in site.posts limit:3 %}
+
+        <a href="{{ link.url }}" class="list-group-item list-group-item-action">
+          {{ link.title  }}
+        </a>
+
+     {% endfor %}
+     <li>Presentations</li>
+     {% for link in site.data.presentations reversed %}
+
+        <a href="/presentations#{{ link.title | replace: ' ', ''| downcase   }}" class="list-group-item list-group-item-action">
+          {{ link.title  }}
+        </a>
+
+     {% endfor %}
    </ul>
    <!-- take an input and put different data depending if main or blog? -->
 </div>

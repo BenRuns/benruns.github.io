@@ -28,7 +28,7 @@ nav:
     url: /
   - name: News
     url: /news
-  - name: Past Presentations
+  - name: Presentations
     url: /presentations
   - name: Events
     url: https://www.meetup.com/WSeaLUG/
@@ -47,8 +47,6 @@ social-media:
   slack: https://wsealug.slack.com/
   email: mailto:contact@wsealug.net
   trello: https://trello.com/b/duBE2Tpr/wsealug
-
-
 
 
 # Exclude from processing.

@@ -1,0 +1,25 @@
+- title: Putting data into jekyll
+  date: 8/10/2017
+  presenter: Jack Fake Guy
+  description: Some one said something about something
+  slides: http://slides.com/sdrasner/svg-can-do-that#/
+
+- title: Heres the thing
+  presenter: Jack Fake Guy
+  date: 8/10/2017
+  video: <iframe width="560" height="315" src="https://www.youtube.com/embed/78DVtcsT26k" frameborder="0" allowfullscreen></iframe>
+  description: Some one said something about something
+  slides: http://slides.com/sdrasner/svg-can-do-that#/
+
+- title: Something else
+  presenter: Jack Fake Guy
+  date: 8/10/2017
+  video: <iframe width="560" height="315" src="https://www.youtube.com/embed/78DVtcsT26k" frameborder="0" allowfullscreen></iframe>
+  description: Some one said something about something
+  slides: http://slides.com/sdrasner/svg-can-do-that#/
+
+- title: and another thing
+  presenter: Jack Fake Guy
+  date: 8/10/2017
+  video: <iframe width="560" height="315" src="https://www.youtube.com/embed/78DVtcsT26k" frameborder="0" allowfullscreen></iframe>
+  description: Some one said something about something

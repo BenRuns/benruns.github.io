@@ -2,8 +2,31 @@
     <div class="col-sm-12 col-md-12 col-lg-9 card blog-content readable">
       <div class="card-body">
         <h1>{{ page.title }}</h1>
+        <ul>
+          <li>
+             <strong> Date:</strong> {{page.date | date: "%a, %b %d, %Y" }}
+          </li>
+          <li>
+             <strong>Categories:</strong> {{page.categories}}
+          </li>
+          <li>
+             <strong>Author:</strong>
+             {{page.author}}
+          </li>
+        </ul>
         {{ content }}
+        {% if page.previous  %}
+          <a href= "{{ page.previous.url }}" class="pull-left" >
+            << {{page.previous.title }}
+          </a>
+        {% endif %}
+        {% if page.next %}
+          <a href= "{{ page.next.url  }}" class="pull-right" >
+            {{page.next.title }}  >>
+          </a>
+        {% endif %}
       </div>
+
     </div>
 {% endcapture %}
 
