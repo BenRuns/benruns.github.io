@@ -2,10 +2,17 @@
 <div class="col-3 col-md-0 console">
     <ul class='list-group'>
      {% for link in site.nav %}
+        <div>{{ link.url[0] }}</div>
+        {% if link.url contains 'http' %}
+           <a href="{{ link.url }}" class="list-group-item list-group-item-action">
+              {{ link.name }}
+           </a>
+        {% else %}
 
-        <a href="{{ site_prefix | append: link.url }}" class="list-group-item list-group-item-action">
-          {{ link.name }}
-        </a>
+          <a href="{{ site_prefix | append: link.url }}" class="list-group-item list-group-item-action">
+            {{ link.name }}
+          </a>
+        {% endif %}
 
      {% endfor %}
      <li>Recent Updates</li>
