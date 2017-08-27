@@ -3,7 +3,7 @@
     <ul class='list-group'>
      {% for link in site.nav %}
 
-        <a href="{{ link.url }}" class="list-group-item list-group-item-action">
+        <a href="{{ site_prefix | append: link.url }}" class="list-group-item list-group-item-action">
           {{ link.name }}
         </a>
 
@@ -11,7 +11,7 @@
      <li>Recent Updates</li>
      {% for link in site.posts limit:3 %}
 
-        <a href="{{ link.url }}" class="list-group-item list-group-item-action">
+        <a href="{{ site_prefix | append: link.url }}" class="list-group-item list-group-item-action">
           {{ link.title  }}
         </a>
 
@@ -19,7 +19,7 @@
      <li>Presentations</li>
      {% for link in site.data.presentations reversed %}
 
-        <a href="/presentations#{{ link.title | replace: ' ', ''| downcase   }}" class="list-group-item list-group-item-action">
+        <a href="{{ site_prefix | append: /presentations# }}{{ link.title | replace: ' ', ''| downcase   }}" class="list-group-item list-group-item-action">
           {{ link.title  }}
         </a>
 
