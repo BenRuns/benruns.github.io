@@ -1,10 +1,16 @@
+{% if site.github.pages_env == 'development' %}
+    {% assign site_prefix = '' %}
+{% else %}
+   {% assign site_prefix = site.github.url %}
+{% endif %}
+
 {% capture main_content %}
     <div class="col-sm-12 col-md-12 col-lg-9 card">
         <div class="card-body readable news">
           <ul class='list-group'>
           {% for post in site.posts %}
             <li>
-              <a href="{{ post.url | prepend: site_prefix }}" class="list-group-item list-group-item-action">
+              <a href="{{ site_prefix  | append: post.url  }}" class="list-group-item list-group-item-action">
               <ul >
                 <li>
                    <strong> Date:</strong> {{post.date | date: "%a, %b %d, %Y" }}
