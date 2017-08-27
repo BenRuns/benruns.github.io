@@ -1,3 +1,9 @@
+{% if site.github.pages_env == 'development' %}
+    {% assign site_prefix = '' %}
+{% else %}
+   {% assign site_prefix = site.github.url %}
+{% endif %}
+
 {% capture main_content %}
     <div class="col-sm-12 col-md-12 col-lg-9 card blog-content readable">
       <div class="card-body">
@@ -16,12 +22,12 @@
         </ul>
         {{ content }}
         {% if page.previous  %}
-          <a href= "{{ page.previous.url }}" class="pull-left" >
+          <a href= "{{ site_prefix | append: page.previous.url }}" class="pull-left" >
             << {{page.previous.title }}
           </a>
         {% endif %}
         {% if page.next %}
-          <a href= "{{ page.next.url  }}" class="pull-right" >
+          <a href= "{{ site_prefix | append: page.next.url  }}" class="pull-right" >
             {{page.next.title }}  >>
           </a>
         {% endif %}
