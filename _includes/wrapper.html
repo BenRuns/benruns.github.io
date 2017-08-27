@@ -24,8 +24,10 @@
       integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
       crossorigin="anonymous"
       >
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link rel="stylesheet"
           href="{{  site_prefix | append:'/assets/css/style.css?v=') | append: site.github.build_revision  }}">
+
 
 
     <meta name="viewport" content="width=device-width">
@@ -35,31 +37,30 @@
   </head>
   <body>
     {% include mobile-navbar.html  %}
-    <div class="container col-lg-10 console wrapper">
-      <div class="row card-deck main-content">
-          <div class="col-md-6 col-sm-12 console">
-             <div class='center-block'>
-               <img class='img-fluid front-logo' src="{{ site_prefix }}/assets/images/logo.jpeg" alt="West Seattle Linux User Group"></img>
+    <div class="container col-lg-10 console">
 
-             </div>
-          </div>
-          {% include next-event.html %}
-      </div>
-
-      <div class="row main-content card-deck">
-         {% include sidenav.html %}
-         {% if main_content %}
-           {{ main_content }}
-         {% else %}
-            <div class="col-lg-8 col-md-12 col-sm-12 card console">
-              <div class="card-body readable">
-
-                  {{ content }}
-
-              </div>
+        <div class="row card-deck main-content">
+            <div class="col-md-6 col-sm-12 console">
+                {% include logo.html %}
+                {% include social-links.html %}
             </div>
-        {% endif %}
-      </div>
+            <div class="col-md-6 col-sm-12 console">
+                {% include next-event.html %}
+            </div>
+        </div>
+
+        <div class="row main-content card-deck">
+            {% include sidenav.html %}
+            {% if main_content %}
+                {{ main_content }}
+            {% else %}
+                <div class="col-lg-8 col-md-12 col-sm-12 card console">
+                    <div class="card-body readable">
+                        {{ content }}
+                    </div>
+                </div>
+           {% endif %}
+        </div>
 
         <footer class="row main-content footer">
             <div class="col-12 console">

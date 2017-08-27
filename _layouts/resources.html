@@ -1,0 +1,11 @@
+{% capture main_content %}
+    <div class="col-sm-12 col-md-12 col-lg-9 card blog-content readable">
+      <div class="card-body">
+        {{ content }}
+
+      </div>
+    </div>
+{% endcapture %}
+
+
+{% include wrapper.html main_content=main_content  %}

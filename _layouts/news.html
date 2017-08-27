@@ -1,0 +1,31 @@
+{% capture main_content %}
+    <div class="col-sm-12 col-md-12 col-lg-9 card">
+        <div class="card-body readable news">
+          <ul class='list-group'>
+          {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url | prepend: site_prefix }}" class="list-group-item list-group-item-action">
+              <ul >
+                <li>
+                   <strong> Date:</strong> {{post.date | date: "%a, %b %d, %Y" }}
+                </li>
+                <li>
+                   <strong> categories:</strong> {{post.categories}}
+                </li>
+                <li class='announcement-title' >
+
+                      <strong>{{post.title}}</strong>
+
+                </li>
+              </ul>
+            </a>
+            </li>
+
+          {% endfor %}
+       </div>
+    </div>
+
+{% endcapture %}
+
+
+{% include wrapper.html main_content=main_content  %}

@@ -26,14 +26,14 @@ gems:
 nav:
   - name: Home
     url: /
-  # - name: About
-  #   url: /about
-  # - name: News
-  #   url: /news
-  # - name: Events
-  #   url: /events
-  - name: Trello
-    url: https://trello.com/b/duBE2Tpr/wsealug
+  - name: News
+    url: /news
+  - name: Presentations
+    url: /presentations
+  - name: Events
+    url: https://www.meetup.com/WSeaLUG/
+  - name: Linux Resources
+    url: /resources
   - name: Code of Conduct
     url: https://github.com/wsealug/wsealug/blob/master/code_of_conduct.md
 
@@ -46,8 +46,7 @@ social-media:
   twitter: https://twitter.com/wsealug
   slack: https://wsealug.slack.com/
   email: mailto:contact@wsealug.net
-
-
+  trello: https://trello.com/b/duBE2Tpr/wsealug
 
 
 # Exclude from processing.

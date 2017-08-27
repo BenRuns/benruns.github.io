@@ -1,0 +1,17 @@
+
+  <div class="col-12 social-links">
+      {% for media in site.social-media %}
+
+         <a aria-label="{{ media[0] | capitalize }}"
+            href="{{ media[1] }}"
+            title="{{ media[0] | capitalize }}" 
+            >
+            {% if media[0] == 'email' %}
+              <i class="icon fa fa-envelope"></i>
+            {% else %}
+              <i class="icon fa fa-{{ media[0] }}"></i>
+            {% endif %}
+         </a>
+
+      {% endfor %}
+  </div>

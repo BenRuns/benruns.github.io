@@ -1,16 +1,24 @@
 {% capture main_content %}
-    <div class="col-sm-12 col-md-12 col-lg-10 card">
+    <div class="col-sm-12 col-md-12 col-lg-9 card">
         <div class="card-body readable">
           <div>{{ content }}</div>
-          <!-- <H4>Latest News</h4>
+          <h2><strong>Latest News!</strong></h2>
+          {% assign post = site.posts.first %}
+          <ul>
+            <li>
+               <strong> Date:</strong> {{post.date | date: "%a, %b %d, %Y" }}
+            </li>
+            <li>
+               <strong> categories:</strong> {{post.categories}}
+            </li>
+            <li class='announcement-title' >
+                <a href="{{ post.url | prepend: site_prefix }}">
+                  <strong>{{post.title}}</strong>
+                </a>
+            </li>
+          </ul>
+          <div>{{ post.content }}</div>
 
-
-          <H4> Latest Slides </h4>
-
-
-          <h4> Linux Resources </h4>
-
-          <h4>Twitter Feed</h4> -->
        </div>
     </div>
 

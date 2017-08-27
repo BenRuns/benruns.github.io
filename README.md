@@ -41,7 +41,7 @@ about [jekyll here.](http://jekyllrb.com/)
 - [bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
 
-### WSEALUG Resoutces
+### WSEALUG Resources
 - [github](https://github.com/wsealug)
 - [meetup](https://www.meetup.com/)
 - [twitter](https://twitter.com/WSeaLUG)
@@ -50,18 +50,17 @@ about [jekyll here.](http://jekyllrb.com/)
 
 
 ### TODO
-- Move social media links under logo
 - Finish Pages
   - News
   - Events
   - Past Presentations
   - About
-- Make the mascot svg
-- adjust styling and get opinion on design
-- discuss content(adding/removing/copy fixes) with other members
-- sneak in a seaslug on the site
+
+- Review blog changes
+- Review standard for content changes
 
 ### LATER
-
+- Events page
+- Mascot svg
 - Linux Resources page
 - Bio for organizers

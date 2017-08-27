@@ -2,7 +2,7 @@
 ---
 
 //colors
-$background: #f3f3f3;
+$background: #5E2750;
 $console-background:#2C001E;
 $console-text: #CCCCCC;
 $console-link: #ffff00;
@@ -34,6 +34,24 @@ body {
   margin: auto;
 }
 
+.social-links{
+  text-align: center;
+  font-size: 1.5em;
+  padding: 8px;
+  a:link{
+  text-decoration: none;
+  }
+  i{
+    padding: 5px;
+    border-radius: 100%;
+  }
+  i:hover{
+    color: $console-background;
+    background-color: $console-link;
+  }
+}
+
+
 @media (min-width: 768px) {
   .lug-mobile-nav { display: none; }
  }
@@ -57,10 +75,26 @@ body {
  }
  .readable{
    color:black;
+   a {
+     color: $darkgreen
+   }
+   img {
+     max-width: 100%;
+   }
  }
- .readable a{
-   color: $darkgreen;
- }
+
+.news{
+    ul{
+      list-style: none;
+    }
+    a{
+      color:black
+    }
+}
+
+.announcement-title a{
+  color: black
+}
 
  // Extra small devices (portrait phones, less than 576px)
  // No media query since this is the default in Bootstrap
