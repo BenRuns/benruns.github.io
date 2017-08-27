@@ -36,8 +36,19 @@ body {
 
 .social-links{
   text-align: center;
-  font-size: 1.8em;
-  margin: 10px;
+  font-size: 1.5em;
+  padding: 8px;
+  a:link{
+  text-decoration: none;
+  }
+  i{
+    padding: 5px;
+    border-radius: 100%;
+  }
+  i:hover{
+    color: $console-background;
+    background-color: $console-link;
+  }
 }
 
 
